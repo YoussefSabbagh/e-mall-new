@@ -1,0 +1,86 @@
+.section {
+  width: 100%;
+  background-color: var(--lightClr);
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 300px;
+    margin-bottom: 2rem;
+  }
+}
+
+.title {
+  color: var(--saintBlue);
+  font-size: 2.5rem;
+
+  @media screen and (min-width: 800px) {
+    font-size: 3rem;
+  }
+}
+
+.address {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.info {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding: 1rem 1rem 1rem 0;
+    width: 40%;
+  }
+
+  div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logo {
+    width: 200px;
+  }
+
+  .flag {
+    width: 70px;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  margin-top: 2rem;
+  background-color: var(--saintOrange);
+
+  @media screen and (min-width: 768px) {
+    width: 60%;
+  }
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 350px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+}

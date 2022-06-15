@@ -1,0 +1,63 @@
+:root {
+  /* Colors */
+  --altClr: #1544c0;
+  --lightClr: #edebe8;
+  --darkClr: #5e6072;
+  --ctaInvClr: #5210ac;
+  --ctaClr: #eb6909;
+
+  --saintBlue: #001489;
+  --saintBlueLight: #92c3fc;
+  --saintOrange: #eb6909;
+  --saintOrangeLight: #eb690925;
+  --saintGreen: #97ca40;
+  --saintGreenLight: #97ca4025;
+  --saintPurple: #462e83;
+
+  /* other variables  */
+  --header-height: 80px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--lightClr);
+  color: var(--darkclr);
+  font-size: 16px;
+  line-height: 1.2;
+
+  font-family: Tahoma, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.primary-nav {
+  background-color: aliceblue;
+  padding: 16px 32px;
+}
+
+nav a {
+  margin-right: 16px;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+}
+
+.title-center {
+  text-align: center;
+  margin-top: 2rem;
+}

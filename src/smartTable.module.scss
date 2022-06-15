@@ -1,0 +1,58 @@
+.smartTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px auto 0;
+  font-size: 1rem;
+  color: #4a788b;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+
+  thead {
+    background-color: var(--saintGreenLight);
+  }
+
+  th,
+  td {
+    border: 1px solid var(--saintGreen);
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  caption {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .smartTable .first-cell,
+  .smartTable thead {
+    display: none;
+  }
+  .smartTable tr,
+  .smartTable td {
+    display: block;
+  }
+
+  .smartTable tr:not(:last-child) {
+    border-bottom: 5px solid var(--saintGreen);
+  }
+
+  .smartTable td {
+    padding-left: 54%;
+    position: relative;
+  }
+
+  .smartTable td::before {
+    content: attr(data-col-title);
+    width: 45%;
+    position: absolute;
+    padding: 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-weight: bold;
+    background-color: var(--saintGreenLight);
+  }
+}

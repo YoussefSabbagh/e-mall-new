@@ -1,0 +1,154 @@
+.section {
+  min-height: calc(100vh - var(--header-height));
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('/assets/image/pictures/login_bg.jpg');
+  background-size: cover;
+
+  @media screen and (min-width: 639px) {
+    padding: 1rem 10vw;
+    align-items: flex-end;
+  }
+}
+
+.card {
+  height: 600px;
+  width: 420px;
+  max-width: 100%;
+  padding: 1rem;
+
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(151, 200, 60, 0.3);
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 3rem;
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.msgs {
+  margin: 1rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--darkClr);
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__field {
+    width: 100%;
+    position: relative;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+
+    label {
+      font-size: 18px;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      height: 2.5rem;
+      margin-bottom: 0;
+      padding: 0 1rem;
+
+      outline: none;
+      border: 1px solid rgba(200, 200, 200, 0.3);
+      border-radius: 5px;
+      border-bottom: 2px solid transparent;
+
+      box-shadow: none;
+
+      transition: all 0.5s ease-in-out;
+
+      &::placeholder {
+        color: rgba(200, 200, 200, 0.9);
+      }
+
+      &:not(:last-of-type) {
+        border-bottom: 2px solid rgba(200, 200, 200, 0.3);
+      }
+
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid var(--saintBlue);
+      }
+    }
+  }
+}
+
+.button {
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+
+  padding: 0.75rem 20%;
+  background-color: var(--saintBlue);
+  color: var(--lightClr);
+
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--ctaInvClr);
+  }
+}
+
+.error {
+  color: var(--ctaClr);
+  font-size: 0.85rem;
+  margin: 0 0 15px;
+  padding: 0;
+}
+.credentialError {
+  background-color: var(--saintOrangeLight);
+  color: var(--ctaClr);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.muteLink {
+  font-size: 0.7rem;
+  color: var(--saintBlue);
+  text-decoration: none;
+}
+
+.boldLink {
+  font-size: 0.85rem;
+  color: var(--saintBlue);
+  text-decoration: none;
+  cursor: pointer;
+
+  span {
+    color: var(--ctaClr);
+  }
+}

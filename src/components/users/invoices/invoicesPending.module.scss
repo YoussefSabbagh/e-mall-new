@@ -1,0 +1,13 @@
+.section {
+  padding: 2rem 4rem;
+}
+
+.exchangeRate {
+  padding: 0 5rem;
+  text-align: right;
+  font-size: 1.3rem;
+  span {
+    font-weight: bold;
+    color: var(--saintOrange);
+  }
+}

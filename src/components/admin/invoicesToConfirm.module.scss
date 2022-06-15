@@ -1,0 +1,29 @@
+.section {
+  padding: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.payButton {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  display: block;
+  border: none;
+  border-radius: 5px;
+
+  background: var(--saintGreen);
+  cursor: pointer;
+  transition: 0.2s linear;
+
+  &:last-child {
+    background: var(--saintOrange);
+  }
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
