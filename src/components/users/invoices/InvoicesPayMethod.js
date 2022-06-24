@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useAuth } from '../../../context/auth';
 
 import { DepositMethod } from './DepositMethod';
-// import MovilPayPayment from '../../components/Payments/MovilPay/MovilPayModal';
+import { MovilMethod } from './MovilMethod';
 // import ZellePayment from '../../components/Payments/ZellePayments';
 
 import { FormatDecimal } from '../../../utils/formats';
@@ -197,14 +197,14 @@ export const InvoicesPayMethod = ({ amountToPay, exchangeRate }) => {
             show={setShowModal}
           />
         )}
-        {/* {showModal && payments.method === 'pago-movil' && (
-          <MovilPayPayment
+        {showModal && payments.method === 'pago-movil' && (
+          <MovilMethod
             invoicesToPay={invoicesToPay}
             amount={payments.amount_Bs}
             show={setShowModal}
           />
         )}
-        {payments.method === 'zelle' && (
+        {/* {payments.method === 'zelle' && (
           <ZellePayment
             invoicesToPay={invoicesToPay}
             amount={payments.payment_amount_USD}
